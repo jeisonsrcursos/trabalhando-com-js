@@ -1,6 +1,20 @@
+/**
+* SCSS
+* SASS
+* LESS
+*/
+
+* {
+    --cor-nav: rgb(62, 178, 227);
+}
+
 
 body {
     margin: 0;
+}
+
+main {
+    margin-bottom: 40px;
 }
 
 .header {
@@ -12,13 +26,24 @@ body {
 .barra-nav {
     height: 50px;
     padding-top: 0.5rem;
-    background-color: rgb(62, 178, 227);
+    /* background-color: rgb(62, 178, 227); */
+    background-color: var(--cor-nav);
 }
 
-.barra-nav ul li {
+/*.barra-nav ul li {
     float: left;
     margin-left: 20px;
     list-style: none;
+}*/
+
+.barra-nav {
+    ul {
+        li {
+            float: left;
+            margin-left: 20px;
+            list-style: none;
+        }
+    }
 }
 
 .header-sec {
@@ -37,17 +62,36 @@ body {
 .header-sec img {
     width: 500px;
     height: auto;
+    box-shadow: 5px 5px 10px black;
 }
 
 .footer {
     width: 100%;
-    height: 60px;
+    height: 40px;
     bottom: 0;
     position: fixed;
     background-color: rgb(62, 178, 227);
 }
 
 .footer h3 {
+    top: 0;
+    padding: 10px;
     text-align: center;
     font-size: 15px;
+}
+
+.container {
+    margin: 2rem 10%;
+    display: flex;
+    /* flex-direction: row; */
+    flex-direction: column;
+    /* justify-content: space-evenly; */
+    align-items: center;
+}
+
+.foto {
+    width: 200px;
+    height: auto;
+    margin-top: 5px;
+    box-shadow: 5px 5px 10px black;
 }
