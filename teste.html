@@ -2,6 +2,8 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
+    <meta keyword="HTML, Javascript">
+    <meta description="">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>.::SITE MODELO - Teste::.</title>
@@ -28,35 +30,22 @@
     </header>
     <main class="conteudo">
         <section class="container">
-            <img 
-            src="assets/img/paisagem-1.jpg"
-            alt="Imagem de uma paisagem."
-            class="foto">
-            <img 
-            src="assets/img/paisagem-2.jpg"
-            alt="Imagem de uma paisagem."
-            class="foto">
-            <img 
-            src="assets/img/paisagem-3.jpg"
-            alt="Imagem de uma paisagem."
-            class="foto">
-            <img 
-            src="assets/img/paisagem-4.jpg"
-            alt="Imagem de uma paisagem."
-            class="foto">
-            <img 
-            src="assets/img/paisagem-5.jpg"
-            alt="Imagem de uma paisagem."
-            class="foto">
-            <img 
-            src="assets/img/paisagem-6.jpg"
-            alt="Imagem de uma paisagem."
-            class="foto">
+            <div class="container">
+                <button class="botao"
+                    onclick="adicionaParagrafo(prompt('Informe a quantidade de parágrafos:', 0))">
+                    Adicionar Parágrafo
+                </button>
+            </div>
+            <!-- Tags HTML dinâmicas. -->
+            <div class="container">
+                <div id="p"></div>
+            </div>
         </section>
     </main>
     <footer class="footer">
         <!-- Rodapé -->
         <h3>Desenvolvido por [NOME] 2024&copy;</h3>
     </footer>
+    <script src="assets/js/script.js"></script>
 </body>
 </html>
